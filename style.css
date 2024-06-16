@@ -1,0 +1,65 @@
+:root {
+  --main-branding-color: grey;
+  --secondary-branding-color: rgb(85, 85, 85);
+  --tertiary-branding-color: rgb(67, 67, 67);
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+}
+
+nav {
+  background-color: var(--main-branding-color);
+  color: white;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  font-size: 20px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: var(--main-branding-color);
+  text-align: center;
+  padding: 123px 40px;
+  color: white;
+}
+header h3 {
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 20px;
+  margin: 0;
+}
+header h1 {
+  font-size: 50px;
+  margin-top: 10px;
+}
+header h4 {
+  font-size: 20px;
+  opacity: 0.8;
+}
+header h2 {
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+header a {
+  background-color: var(--tertiary-branding-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
