@@ -1,7 +1,7 @@
 :root {
-  --main-branding-color: grey;
-  --secondary-branding-color: rgb(85, 85, 85);
-  --tertiary-branding-color: rgb(67, 67, 67);
+  --main-branding-color: #e8563f;
+  --secondary-branding-color: #171717e5;
+  --tertiary-branding-color: #447258;
 }
 
 body {
@@ -55,12 +55,12 @@ header .social-media {
   margin-bottom: 60px;
 }
 .social-media a {
-  font-size: 19px;
+  font-size: 25px;
   font-weight: bold;
   color: var(--secondary-branding-color);
 }
 .social-media a:hover {
-  color: var(--tertiary-branding-color);
+  color: white;
   transition: all ease-in-out 220ms;
 }
 header h3 {
@@ -82,7 +82,7 @@ header h2 {
   margin-bottom: 60px;
 }
 header .contact-button {
-  background-color: var(--tertiary-branding-color);
+  background-color: var(--secondary-branding-color);
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
