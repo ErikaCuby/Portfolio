@@ -36,8 +36,32 @@ a {
 header {
   background-color: var(--main-branding-color);
   text-align: center;
-  padding: 123px 40px;
   color: white;
+  padding: 123px 20px;
+}
+header .container {
+  display: grid;
+  grid-template-columns: 0.5fr 4fr;
+}
+header .social-media {
+  display: flex;
+  flex-direction: column;
+}
+header .social-media {
+  font-size: 20px;
+  justify-content: center;
+}
+.social-media i {
+  margin-bottom: 60px;
+}
+.social-media a {
+  font-size: 19px;
+  font-weight: bold;
+  color: var(--secondary-branding-color);
+}
+.social-media a:hover {
+  color: var(--tertiary-branding-color);
+  transition: all ease-in-out 220ms;
 }
 header h3 {
   text-transform: uppercase;
@@ -57,7 +81,7 @@ header h2 {
   font-size: 30px;
   margin-bottom: 60px;
 }
-header a {
+header .contact-button {
   background-color: var(--tertiary-branding-color);
   color: white;
   padding: 10px 20px;
