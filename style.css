@@ -111,8 +111,9 @@ header h2 {
   margin: 10px 0 30px;
 }
 header .contact-button {
+  text-transform: uppercase;
   background-color: var(--main-branding-color);
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   padding: 10px 30px;
   border-radius: 20px;
@@ -163,10 +164,10 @@ span {
   background-color: rgba(128, 128, 128, 0.188);
   background: linear-gradient(to bottom, #7777782b 0%, white 100%);
 }
-.section-projects {
+.section-style {
   padding: 90px 0 100px;
 }
-.section-projects h2 {
+.section-h2 {
   text-align: center;
 }
 .projects {
@@ -175,6 +176,36 @@ span {
 }
 .projects img {
   max-width: 100%;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 1000px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contact a {
+  color: var(--secondary-branding-color);
+  transition: var(---transition);
+}
+.contact a:hover {
+  color: var(--main-branding-color);
+}
+.text {
+  margin: 30px 0 0 40px;
+}
+.in-touch {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--main-branding-color);
+}
+.collaboration {
+  opacity: 0.8;
+}
+.contact {
+  text-align: center;
 }
 
 .footer-background {
@@ -190,9 +221,11 @@ footer {
   border-bottom: 1px solid white;
 }
 .name {
+  letter-spacing: 3px;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
 .title {
   font-size: 15px;
