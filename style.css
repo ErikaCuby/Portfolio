@@ -27,8 +27,11 @@ h1 {
   color: var(--main-branding-color);
 }
 .certificate-header-text {
+  position: relative;
+  top: 40px;
   text-align: center;
-  margin: 100px 0 0;
+  margin: 0;
+  padding: 90px 0 0;
 }
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -60,6 +63,9 @@ section {
 }
 .section-style {
   padding: 90px 0 0px;
+}
+.certificate-section {
+  margin-top: 0;
 }
 
 nav {
