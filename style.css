@@ -48,6 +48,12 @@ h2 {
 .section-h2 {
   text-align: center;
 }
+.header-link {
+  transition: var(---transition);
+}
+.header-link:hover {
+  color: var(--main-branding-color);
+}
 span {
   font-weight: bold;
   color: var(--tertiary-branding-color);
