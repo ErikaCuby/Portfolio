@@ -181,9 +181,17 @@ header .contact-button:hover {
 .projects-card {
   border: 20px solid white;
   margin-bottom: 20px;
+  box-shadow: var(--box-shadov);
 }
-.projects-card img {
+.card-img {
+  overflow: hidden;
+}
+.card-img img {
   max-width: 100%;
+  transition: var(---transition);
+}
+.card-img img:hover {
+  transform: scale(1.05);
 }
 .react-weather-app {
   background-color: white;
