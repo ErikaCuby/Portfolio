@@ -12,6 +12,11 @@ body {
   margin: 0 auto;
   max-width: 1400px;
 }
+.page {
+  margin: 0;
+  padding: 0;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
 p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   opacity: 0.8;
@@ -177,11 +182,11 @@ header .contact-button:hover {
   border: 20px solid white;
   margin-bottom: 20px;
 }
+.projects-card img {
+  max-width: 100%;
+}
 .react-weather-app {
   background-color: white;
-}
-.projects img {
-  max-width: 100%;
 }
 .card-text {
   text-align: center;
@@ -219,12 +224,15 @@ header .contact-button:hover {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--main-branding-color);
+  font-size: 25px;
+  margin: 5px;
 }
 .collaboration {
   opacity: 0.8;
 }
 .contact {
   text-align: center;
+  margin-top: 15px;
 }
 
 .footer-background {
@@ -233,7 +241,7 @@ header .contact-button:hover {
 footer {
   color: white;
   margin: 0 80px;
-  padding: 50px;
+  padding: 40px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -267,6 +275,11 @@ footer {
   color: white;
   background-color: var(--main-branding-color);
 }
+.github {
+  border-bottom: 1px dashed white;
+  padding-bottom: 10px;
+  margin: 0 350px 10px 0;
+}
 .github a {
   color: var(--main-branding-color);
   font-weight: 700;
@@ -274,4 +287,9 @@ footer {
 }
 .github a:hover {
   color: var(--tertiary-branding-color);
+}
+.credits {
+  text-transform: uppercase;
+  font-size: 14px;
+  opacity: 0.3;
 }
