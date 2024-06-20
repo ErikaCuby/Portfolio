@@ -23,6 +23,9 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+.active {
+  color: var(--main-branding-color);
+}
 .certificate-header-text {
   text-align: center;
   margin: 100px 0 0;
@@ -193,7 +196,7 @@ header .contact-button:hover {
 .certificate-card {
   box-shadow: var(--box-shadov);
 }
-.card-img {
+.card-img,.certificate-card {
   overflow: hidden;
 }
 .card-img img,
@@ -201,7 +204,7 @@ header .contact-button:hover {
   max-width: 100%;
   transition: var(---transition);
 }
-.card-img img:hover {
+.card-img img:hover,.certificate-card img:hover {
   transform: scale(1.05);
 }
 .react-weather-app {
