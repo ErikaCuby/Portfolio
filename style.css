@@ -465,8 +465,7 @@ footer {
   h2 {
     font-size: 15px;
     text-align: center;
-      margin: 0 0 15px;
-
+    margin: 0 0 15px;
   }
   section {
     margin: 30px 30px;
@@ -525,7 +524,7 @@ footer {
   .certificates-grid {
     grid-gap: 8px;
     margin-top: 15px;
-  }  
+  }
   .projects-card {
     margin-bottom: 10px;
   }
@@ -555,14 +554,14 @@ footer {
   }
   footer {
     margin: 0 10px;
-    padding: 15px 10px;
+    padding: 20px 10px;
   }
   .name {
-    font-size: 8px;
+    font-size: 10px;
     margin: 0 0 3px;
   }
   .title {
-    font-size: 6px;
+    font-size: 8px;
     margin: 0 0 4px;
   }
   .soc-media a {
@@ -571,11 +570,11 @@ footer {
     border-radius: 20px;
   }
   .github {
-    font-size: 6px;
+    font-size: 8px;
     margin: 0 40px 5px 0;
     padding: 0 0 5px;
   }
   .credits {
-    font-size: 6px;
+    font-size: 8px;
   }
 }
