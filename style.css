@@ -362,7 +362,7 @@ footer {
     padding: 0 0 70px 0;
   }
   header h1 {
-    margin: 100px 0 10px 0;
+    margin: 30px 0 10px 0;
   }
   header h4 {
     font-size: 10px;
@@ -414,7 +414,7 @@ footer {
     font-size: 16px;
     top: 2px;
   }
-.contact-grid {
+  .contact-grid {
     padding: 10px 20px;
     border-radius: 80px;
   }
@@ -439,6 +439,7 @@ footer {
     font-size: 12px;
   }
   .soc-media a {
+    font-size: 15px;
     padding: 5px 10px;
     border-radius: 20px;
   }
@@ -447,5 +448,134 @@ footer {
   }
   .credits {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 18px;
+  }
+  .certificate-header-text {
+    top: 20px;
+    padding: 20px 0 0;
+  }
+  p {
+    font-size: 8px;
+  }
+  h2 {
+    font-size: 15px;
+    text-align: center;
+      margin: 0 0 15px;
+
+  }
+  section {
+    margin: 30px 30px;
+  }
+  .section-style {
+    padding: 25px 0 0px;
+  }
+  nav {
+    padding: 8px;
+    grid-template-columns: 1fr 1.5fr;
+    font-size: 7px;
+  }
+  nav img {
+    width: 15px;
+    outline: 1px solid var(--main-branding-color);
+    margin-right: 6px;
+  }
+  header {
+    padding: 0 0 50px 0;
+  }
+  header h1 {
+    letter-spacing: 0;
+    margin: 60px 0 10px 0;
+  }
+  header h4 {
+    font-size: 6px;
+  }
+  header h2 {
+    font-size: 9px;
+    margin: 10px 0 5px;
+  }
+  header .contact-button {
+    font-size: 8px;
+    padding: 5px 15px;
+  }
+  header .social-media {
+    margin-top: 30px;
+  }
+  .social-media a {
+    font-size: 8px;
+    padding: 5px 7px;
+  }
+  .about img {
+    margin-bottom: 20px;
+    width: 130px;
+  }
+  .about p {
+    margin: 0 20px 10px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    grid-gap: 0;
+  }
+  .certificates-grid {
+    grid-gap: 8px;
+    margin-top: 15px;
+  }  
+  .projects-card {
+    margin-bottom: 10px;
+  }
+  .projects-card,
+  .certificate-card {
+    border: 4px solid white;
+  }
+  .card-text a {
+    margin-left: 8px;
+    font-size: 16px;
+    top: 2px;
+  }
+  .contact-grid {
+    padding: 0 15px;
+    border-radius: 80px;
+  }
+  .text {
+    margin: 20px 0 10px 10px;
+  }
+  .in-touch {
+    font-size: 10px;
+    margin: 3px;
+  }
+  .contact {
+    margin-top: 25px;
+    font-size: 10px;
+  }
+  footer {
+    margin: 0 10px;
+    padding: 15px 10px;
+  }
+  .name {
+    font-size: 8px;
+    margin: 0 0 3px;
+  }
+  .title {
+    font-size: 6px;
+    margin: 0 0 4px;
+  }
+  .soc-media a {
+    font-size: 8px;
+    padding: 5px 8px;
+    border-radius: 20px;
+  }
+  .github {
+    font-size: 6px;
+    margin: 0 40px 5px 0;
+    padding: 0 0 5px;
+  }
+  .credits {
+    font-size: 6px;
   }
 }
