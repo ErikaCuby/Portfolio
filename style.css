@@ -578,3 +578,9 @@ footer {
     font-size: 8px;
   }
 }
+
+@media (max-width: 320px) {
+  nav {
+    grid-template-columns: 0.7fr 1.5fr;
+  }
+}
