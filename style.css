@@ -17,61 +17,11 @@ body {
   padding: 0;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
-h1 {
-  font-size: 50px;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.active {
-  color: var(--main-branding-color);
-}
-.certificate-header-text {
-  position: relative;
-  top: 40px;
-  text-align: center;
-  margin: 0;
-  padding: 90px 0 0;
-}
-p {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  opacity: 0.8;
-  font-size: 16px;
-}
-h2 {
-  text-transform: uppercase;
-  margin: 0 0 30px;
-  color: var(--tertiary-branding-color);
-  font-size: 35px;
-  font-weight: bold;
-}
-.section-h2 {
-  text-align: center;
-}
-.header-link {
-  transition: var(---transition);
-}
-.header-link:hover {
-  color: var(--main-branding-color);
-}
-span {
-  font-weight: bold;
-  color: var(--tertiary-branding-color);
-}
 a {
   text-decoration: none;
 }
-section {
-  margin: 100px 80px;
-}
 .background-color {
   background: linear-gradient(to bottom, #7777782b 0%, white 100%);
-}
-.section-style {
-  padding: 90px 0 0px;
-}
-.certificate-section {
-  margin-top: 0;
 }
 
 nav {
@@ -94,6 +44,9 @@ nav img {
   outline: 3px solid var(--main-branding-color);
   margin-right: 15px;
 }
+.nav-initials-name {
+  display: none;
+}
 nav ul {
   margin: 0;
   padding: 0;
@@ -111,6 +64,9 @@ nav a {
 nav a:hover {
   color: var(--main-branding-color);
 }
+.active {
+  color: var(--main-branding-color);
+}
 
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
@@ -120,20 +76,18 @@ header {
   background-repeat: no-repeat;
   text-align: center;
   color: var(--secondary-branding-color);
-  padding: 0 0 140px 0;
 }
-header .container {
+.header-column-container {
   display: grid;
-  grid-template-columns: 0.7fr 6fr;
+  grid-template-columns: 1fr 6fr;
 }
-header .social-media {
+.header-social-media {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
 }
-.social-media a {
+.header-social-media a {
   font-size: 20px;
   font-weight: bold;
   color: var(--secondary-branding-color);
@@ -143,25 +97,41 @@ header .social-media {
   background-color: white;
   transition: var(---transition);
 }
-.social-media a:hover {
+.header-social-media a:hover {
   color: white;
   background-color: var(--main-branding-color);
 }
-header h1 {
-  margin: 210px 0 10px 0;
+.header-text {
+  margin: 190px 140px 130px 0;
 }
-header span {
+.header-text h1,.certificates-header {
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.certificates-header {
+  text-align: center;
+  margin: 100px;
+}
+
+
+.header-text span,.certificates-header span {
   color: var(--main-branding-color);
 }
-header h4 {
+.header-text h4 {
   font-size: 20px;
-  margin: 0;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-header h2 {
+.header-text h2 {
   font-size: 25px;
-  margin: 10px 0 30px;
+  margin: 10px 0 60px;
 }
-header .contact-button {
+br {
+  display: none;
+}
+.header-text .contact-button {
   text-transform: uppercase;
   background-color: var(--main-branding-color);
   font-size: 16px;
@@ -170,11 +140,18 @@ header .contact-button {
   border-radius: 20px;
   box-shadow: var(--box-shadov);
   transition: var(---transition);
+  font-weight: 600;
 }
-header .contact-button:hover {
+.header-text .contact-button:hover {
   background-color: var(--tertiary-branding-color);
 }
 
+section {
+  margin: 100px 80px;
+}
+.certificate-section {
+  margin-top: 0;
+}
 .about {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -184,6 +161,28 @@ header .contact-button:hover {
   width: 100%;
   border-radius: 200px;
 }
+h2 {
+  text-transform: uppercase;
+  margin: 0 0 30px;
+  color: var(--tertiary-branding-color);
+  font-size: 35px;
+  font-weight: bold;
+}
+.certificate-second-header-link {
+  transition: var(---transition);
+}
+.certificate-second-header-link:hover {
+  color: var(--main-branding-color);
+}
+p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  opacity: 0.8;
+  font-size: 16px;
+}
+span {
+  font-weight: bold;
+  color: var(--tertiary-branding-color);
+}
 .about-decription a {
   color: var(--tertiary-branding-color);
   transition: var(---transition);
@@ -192,6 +191,12 @@ header .contact-button:hover {
   color: var(--main-branding-color);
 }
 
+.section-style {
+  padding: 90px 0 0px;
+}
+.section-h2 {
+  text-align: center;
+}
 .projects,
 .certificates-grid {
   display: grid;
@@ -207,16 +212,16 @@ header .contact-button:hover {
   border: 20px solid white;
   box-shadow: var(--box-shadov);
 }
-.card-img,
+.project-card-img,
 .certificate-card {
   overflow: hidden;
 }
-.card-img img,
+.project-card-img img,
 .certificate-card img {
   max-width: 100%;
   transition: var(---transition);
 }
-.card-img img:hover,
+.project-card-img img:hover,
 .certificate-card img:hover {
   transform: scale(1.05);
 }
@@ -245,29 +250,32 @@ header .contact-button:hover {
   padding: 25px 30px;
   border-radius: 1000px;
 }
-.contact a {
-  color: var(--secondary-branding-color);
-  transition: var(---transition);
-}
-.contact a:hover {
-  color: var(--main-branding-color);
-}
-.text {
+.contact-text {
   margin: 30px 0 0 40px;
 }
-.in-touch {
+.upper-contact-text {
   text-transform: uppercase;
   font-weight: bold;
   color: var(--main-branding-color);
   font-size: 25px;
   margin: 5px;
 }
-.collaboration {
+.lower-contact-text {
   opacity: 0.8;
 }
-.contact {
+.contact-info {
   text-align: center;
-  margin-top: 35px;
+  margin-top: 40px;
+}
+.contact-info a {
+  color: var(--secondary-branding-color);
+  transition: var(---transition);
+}
+.contact-info a:hover {
+  color: var(--main-branding-color);
+}
+.contact-info .email {
+font-size: 18px;
 }
 
 .footer-background {
@@ -329,273 +337,3 @@ footer {
   margin-bottom: 0;
 }
 
-@media (max-width: 800px) {
-  h1 {
-    font-size: 30px;
-  }
-  .certificate-header-text {
-    top: 10px;
-    padding: 60px 0 0;
-  }
-  p {
-    font-size: 12px;
-  }
-  h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-  section {
-    margin: 50px 60px;
-  }
-  .section-style {
-    padding: 50px 0 0px;
-  }
-  nav {
-    padding: 10px 40px;
-    grid-template-columns: 1fr 1fr;
-    font-size: 10px;
-  }
-  nav img {
-    width: 25px;
-  }
-  header .container {
-  grid-template-columns: 0.5fr 8fr;
-  margin: 0 20px 0 40px;
-}
-  header {
-    padding: 0 0 70px 0;
-  }
-  header h1 {
-    margin: 80px 0 10px 0;
-  }
-  header h4 {
-    font-size: 10px;
-    text-transform: uppercase;
-  }
-  header h2 {
-    font-size: 16px;
-    margin: 10px 0 10px;
-  }
-  header .contact-button {
-    font-size: 12px;
-    padding: 5px 20px;
-  }
-  header .social-media {
-    margin: 50px 20px 0 0;
-  }
-  .social-media a {
-    font-size: 15px;
-    padding: 10px 15px;
-    border-radius: 30px;
-  }
-  .about {
-    display: block;
-  }
-  .about img {
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    width: 200px;
-    border-radius: 200px;
-  }
-  .about p {
-    margin: 0 100px 10px;
-  }
-  .projects,
-  .certificates-grid {
-    grid-gap: 10px;
-    margin-top: 40px;
-  }
-  .projects-card {
-    margin-bottom: 10px;
-  }
-  .projects-card,
-  .certificate-card {
-    border: 8px solid white;
-  }
-  .card-text a {
-    margin-left: 8px;
-    font-size: 16px;
-    top: 2px;
-  }
-  .contact-grid {
-    padding: 10px 20px;
-    border-radius: 80px;
-  }
-  .text {
-    margin: 20px 0 20px 20px;
-  }
-  .in-touch {
-    font-size: 18px;
-  }
-  .contact {
-    margin-top: 25px;
-  }
-
-  footer {
-    margin: 0 40px;
-    padding: 20px;
-  }
-  .name {
-    font-size: 18px;
-  }
-  .title {
-    font-size: 12px;
-  }
-  .soc-media a {
-    font-size: 15px;
-    padding: 5px 10px;
-    border-radius: 20px;
-  }
-  .github {
-    margin: 0 120px 10px 0;
-  }
-  .credits {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 450px) {
-  h1 {
-    font-size: 16px;
-  }
-  .certificate-header-text {
-    top: 20px;
-    padding: 20px 0 0;
-  }
-  p {
-    font-size: 9px;
-  }
-  h2 {
-    font-size: 15px;
-    text-align: center;
-    margin: 0 0 15px;
-  }
-  section {
-    margin: 30px 30px;
-  }
-  .section-style {
-    padding: 25px 0 0px;
-  }
-  nav {
-    padding: 8px;
-    grid-template-columns: 1fr 1.5fr;
-    font-size: 7px;
-  }
-  nav img {
-    width: 15px;
-    outline: 1px solid var(--main-branding-color);
-    margin-right: 6px;
-  }
-  header .container {
-  grid-template-columns: 0.2fr 8fr;
-  margin: 0 15px 0 0;
-  padding: 0;
-}
-  header {
-    padding: 0 20px 50px 0;
-  }
-  header h1 {
-    letter-spacing: 0;
-    margin: 60px 0 10px 0;
-  }
-  header h4 {
-    font-size: 6px;
-  }
-  header h2 {
-    font-size: 10px;
-    margin: 10px 0 5px;
-  }
-  header .contact-button {
-    font-size: 8px;
-    padding: 5px 15px;
-  }
-  header .social-media {
-    margin: 30px 0 0 10px;
-  }
-  .social-media a {
-    font-size: 8px;
-    padding: 5px 7px;
-  }
-  .about img {
-    margin-bottom: 20px;
-    width: 130px;
-  }
-  .about p {
-    margin: 0 20px 10px;
-  }
-  .projects {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    grid-gap: 0;
-  }
-  .certificates-grid {
-    grid-gap: 8px;
-    margin-top: 15px;
-  }
-  .projects-card {
-    margin-bottom: 10px;
-  }
-  .projects-card,
-  .certificate-card {
-    border: 4px solid white;
-  }
-  .card-text a {
-    margin-left: 8px;
-    font-size: 16px;
-    top: 2px;
-  }
-  .contact-grid {
-    padding: 0 15px;
-    border-radius: 80px;
-  }
-  .text {
-    margin: 10px 0 10px 10px;
-  }
-  .in-touch {
-    font-size: 11px;
-    margin-top: 21px;
-  }
-    .collaboration {
-    display: none;
-  }
-  .bold {
-    font-weight: bold;
-  }
-  .contact {
-    margin-top: 20px;
-    font-size: 10px;
-  }
-  footer {
-    margin: 0 10px;
-    padding: 20px 10px;
-  }
-  .name {
-    font-size: 10px;
-    margin: 0 0 3px;
-  }
-  .title {
-    font-size: 8px;
-    margin: 0 0 4px;
-  }
-  .soc-media a {
-    font-size: 8px;
-    padding: 5px 8px;
-    border-radius: 20px;
-  }
-  .github {
-    font-size: 8px;
-    margin: 0 40px 5px 0;
-    padding: 0 0 5px;
-  }
-  .credits {
-    font-size: 8px;
-  }
-}
-
-@media (max-width: 320px) {
-  nav {
-    grid-template-columns: 0.7fr 1.5fr;
-  }
-}
